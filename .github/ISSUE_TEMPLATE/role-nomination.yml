@@ -1,0 +1,52 @@
+name: Role Nomination
+about: Document a nomination or promotion request for Reviewer, Maintainer, or Council Member.
+title: "role nomination: "
+labels:
+  - governance
+  - roles
+body:
+  - type: input
+    id: nominee
+    attributes:
+      label: Nominee
+      description: GitHub username or contributor identifier.
+    validations:
+      required: true
+  - type: dropdown
+    id: target_role
+    attributes:
+      label: Target role
+      options:
+        - Reviewer
+        - Maintainer
+        - Council Member
+    validations:
+      required: true
+  - type: textarea
+    id: contribution_record
+    attributes:
+      label: Contribution record
+      description: Link contributions, reviews, governance work, or other visible proof-of-work.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain why the nominee meets the published role criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Known conflicts or concerns
+      description: Record any known conflicts, concerns, or reasons for recusal.
+    validations:
+      required: false
+  - type: textarea
+    id: deciding_body
+    attributes:
+      label: Deciding body
+      description: State who should make the decision under the governance model.
+    validations:
+      required: true

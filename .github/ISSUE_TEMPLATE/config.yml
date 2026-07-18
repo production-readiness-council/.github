@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Governance repository
+    url: https://github.com/production-readiness-council/governance
+    about: Review canonical governance artifacts before opening a request.

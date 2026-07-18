@@ -1,0 +1,41 @@
+name: Governance Change
+about: Propose a change to a governance rule, authority boundary, or workflow artifact.
+title: "governance: "
+labels:
+  - governance
+body:
+  - type: textarea
+    id: current_rule
+    attributes:
+      label: Current rule or artifact
+      description: Identify the current document and summarize the rule that would change.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed change
+      description: Describe the exact change requested.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain why the change is needed and what problem it solves.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow_impact
+    attributes:
+      label: Workflow impact
+      description: Describe impact on review, publication, contributor roles, or operations.
+    validations:
+      required: true
+  - type: textarea
+    id: decision_authority
+    attributes:
+      label: Expected decision authority
+      description: State which role or body should approve this change.
+    validations:
+      required: true
